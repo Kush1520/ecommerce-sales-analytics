@@ -1,0 +1,15 @@
+# Ignore data folder and datasets
+data/
+*.csv
+*.xlsx
+
+# Ignore Python virtual environments
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# Ignore OS system files
+.DS_Store
+Thumbs.db
