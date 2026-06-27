@@ -1,256 +1,316 @@
-# 📊 E-Commerce Executive Dashboard | Tableau
+# E-Commerce Executive Dashboard
 
-Interactive business intelligence dashboard developed using Tableau Public to analyze sales, profit, customers, orders, margins, and category-wise business performance.
-
----
-
-## 🚀 Features
-
-- KPI Cards
-  - Total Sales
-  - Total Profit
-  - Total Orders
-  - Total Customers
-  - Profit Margin
-
-- Monthly Sales Trend Analysis
-
-- Category-wise Sales Distribution
-
-- Regional Profit Analysis
-
-- Interactive Filters
-  - Region
-  - Category
-  - Segment
+An interactive Tableau dashboard developed using the Sample Superstore dataset to analyze sales performance, profitability, customer behavior, and category contributions.
 
 ---
 
-## 🛠 Tools Used
+## Project Overview
 
-- Tableau Public
-- Sample Superstore Dataset
-- Git
-- GitHub
+This project aims to transform raw transactional data into meaningful business insights through data visualization and dashboarding techniques.
 
----
-
-## 🔍 Analysis Performed
-
-The following analyses were conducted using Tableau:
-
-### 1. Sales Analysis
-- Computed total sales generated.
-- Examined monthly sales trends.
-- Identified periods with peak and low sales.
-
-### 2. Profit Analysis
-- Calculated overall profit.
-- Analyzed profit contribution by region.
-- Compared profitability across regions.
-
-### 3. Customer Analysis
-- Calculated distinct customer count.
-- Assessed customer reach and engagement.
-
-### 4. Order Analysis
-- Calculated total number of orders.
-- Evaluated order volume performance.
-
-### 5. Margin Analysis
-- Derived Profit Margin using:
-
-```text
-Profit Margin = SUM(Profit) / SUM(Sales)
-```
-
-- Formatted margin as percentage.
-
-### 6. Category Contribution Analysis
-- Measured sales share by category.
-- Visualized contribution using a pie chart.
-- Converted values into percentage of total sales.
-
-### 7. Interactive Filtering
-Implemented filters for:
-
-- Region
-- Segment
-- Category
-
-to allow dynamic dashboard exploration.
+The dashboard enables stakeholders to monitor KPIs, analyze sales trends, evaluate regional profitability, and study category-wise performance using interactive filters.
 
 ---
 
-## ⚙ Methodology
+## Dashboard Preview
 
-The project followed the following workflow:
+### Executive Dashboard
 
-### Step 1 — Data Acquisition
-Imported the Sample Superstore dataset into Tableau.
+![Dashboard Preview](images/7_Dashboard_preview.png)
 
-### Step 2 — Data Understanding
-Reviewed dimensions such as:
+---
 
-- Category
-- Region
-- Segment
-- Customer ID
-- Order Date
+## Features
 
-Measures:
+* KPI Cards
+    * Total Sales
+    * Total Profit
+    * Total Orders
+    * Total Customers
+    * Profit Margin
 
-- Sales
-- Profit
-- Quantity
+* Monthly Sales Trend Analysis
 
-### Step 3 — KPI Development
+* Profit by Region Analysis
+
+* Category Share Distribution
+
+* Interactive Filters
+    * Region
+    * Category
+    * Segment
+
+* Dynamic Dashboard Exploration
+
+---
+
+## Methodology
+
+### Step 1 : Data Collection
+
+Dataset Used:
+
+Sample Superstore Dataset
+
+
+### Step 2 : Data Understanding
+
+Studied dataset attributes including:
+
+Order Date
+
+Sales
+
+Profit
+
+Category
+
+Region
+
+Segment
+
+Customer ID
+
+
+### Step 3 : KPI Development
 
 Created KPI worksheets for:
 
-- Total Sales
-- Total Profit
-- Total Orders
-- Total Customers
-- Profit Margin
+Sales
 
-### Step 4 — Trend Analysis
+Profit
 
-Constructed Monthly Sales Trend using:
+Orders
+
+Customers
+
+Profit Margin
+
+
+### Step 4 : Trend Analysis
+
+Built line charts to identify monthly sales patterns.
+
+Used:
 
 Order Date → Month
 
-Sales → Line Chart
-
-### Step 5 — Regional Analysis
-
-Built bar charts to evaluate:
-
-Profit by Region
-
-### Step 6 — Category Analysis
-
-Developed:
-
-Category Sales Comparison
-
-Category Share Pie Chart
-
-### Step 7 — Dashboard Assembly
-
-Combined worksheets into an executive dashboard layout consisting of:
-
-• Header Section
-
-• KPI Cards
-
-• Monthly Trend Visualization
-
-• Regional Profit Analysis
-
-• Category Share Visualization
-
-• Interactive Filters
+SUM(Sales)
 
 
-### Step 8 — Dashboard Formatting
+### Step 5 : Regional Analysis
 
-Applied:
+Developed bar charts to analyze profitability across regions.
 
-- Entire View fitting
-- Consistent color palette
-- Dynamic filtering
-- Responsive layout
-- Label formatting
-- Percentage formatting
+
+Regions analyzed:
+
+Central
+
+East
+
+South
+
+West
+
+
+### Step 6 : Category Analysis
+
+Created pie charts to understand sales contribution.
+
+
+Categories analyzed:
+
+Technology
+
+Furniture
+
+Office Supplies
+
+
+### Step 7 : Dashboard Design
+
+Created an executive-style dashboard consisting of:
+
+Header Section
+
+KPI Section
+
+Sales Trend Visualization
+
+Category Distribution Chart
+
+Regional Profit Analysis
+
+Interactive Filters
 
 
 ---
 
-## 📈 Dashboard Preview
+## Analysis and Findings
 
-![Dashboard](images/dashboard.png)
+
+### Business KPIs
+
+
+Total Sales
+
+2,297,201
+
+
+Total Profit
+
+286,397
+
+
+Total Orders
+
+5,009
+
+
+Unique Customers
+
+793
+
+
+Profit Margin
+
+12.47%
+
+
 
 ---
 
-## 📂 Project Structure
+### Monthly Sales Trend
+
+
+Sales fluctuate throughout the year.
+
+
+Sales significantly increase during September.
+
+
+November records the highest sales.
+
+
+December maintains strong performance.
+
+
+The business performs best during the fourth quarter.
+
+
+
+---
+
+### Regional Profit Analysis
+
+
+West region generated the highest profit.
+
+
+East region demonstrated strong profitability.
+
+
+South region showed moderate performance.
+
+
+Central region contributed the least profit.
+
+
+
+---
+
+### Category Share Analysis
+
+
+Technology contributes the highest sales share.
+
+
+Furniture and Office Supplies have balanced distributions.
+
+
+Sales are diversified across categories.
+
+
+
+---
+
+## Folder Structure
+
 
 ```text
 ecommerce-sales-analytics/
 
 ├── dashboard/
-│   └── Ecommerce_Executive_Dashboard.twbx
-
-├── data/
-│   └── Sample - Superstore.csv
+│   └── Executive_Dashboard.twbx
 
 ├── images/
-│   └── dashboard.png
+│   ├── 1_EXECUTIVE_DASHBOARD.png
+│   ├── 2_Consumer_sales_trend_preview.png
+│   ├── 3_Corporate_sales_trend_preview.png
+│   ├── 4_Home_Office_sales_trend_preview.png
+│   ├── 5_Category_sales_preview.png
+│   ├── 6_Profit_By_Region_preview.png
+│   └── 7_Dashboard_preview.png
 
 ├── notebooks/
+│   └── analysis.ipynb
 
-├── reports/
+├── Report/
+│   ├── Analysis Report.pdf
+│   └── EXECUTIVE DASHBOARD.pdf
 
 ├── sql/
+│   └── business_queries.sql
 
 ├── src/
 
 ├── README.md
-├── requirements.txt
-└── .gitignore
+
+└── requirements.txt
 ```
 
----
-
-## 📊 Key Insights
-
-- Technology contributes the highest share of sales.
-- West region generates the maximum profit.
-- Sales show an upward trend toward the end of the year.
-- Profit margin achieved: **12.47%**
 
 ---
 
-## 🎯 Key Insights
+## Tools Used
 
-Technology contributes the highest percentage of total sales.
 
-West Region generates the highest profit.
+Tableau Public
 
-Sales demonstrate strong growth towards the end of the year.
+Python
 
-The overall profit margin achieved is **12.47%**.
+Jupyter Notebook
 
----
+SQL
 
-## 🚀 Future Improvements
+Sample Superstore Dataset
 
-Potential enhancements include:
-
-- Profit forecasting
-- Customer segmentation analysis
-- Geographic sales maps
-- Product-level profitability analysis
-- Time-series forecasting models
 
 ---
 
-## 💾 Tableau Workbook
+## Future Improvements
 
-The complete Tableau workbook is available in:
 
-```text
-dashboard/Ecommerce_Executive_Dashboard.twbx
-```
+Customer Segmentation
+
+
+Discount Impact Analysis
+
+
+Forecasting Models
+
+
+Product Performance Dashboard
+
+
+Customer Lifetime Value Analysis
+
 
 ---
-
-## 👨‍💻 Author
-
-**Krrish Gagneja**
-
-BE Information Technology  
-UIET, Panjab University
 
 GitHub:
-https://github.com/Kush1520/ecommerce-sales-analytics/tree/main/ecommerce-sales-analytics
+
+https://github.com/Kush1520/ecommerce-sales-analytics
+
+---
