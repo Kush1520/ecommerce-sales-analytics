@@ -1,6 +1,6 @@
-# E-Commerce Executive Dashboard
+# NovaMart Retail Sales Executive Dashboard
 
-An interactive Tableau dashboard developed using the Superstore dataset to analyze sales performance, profitability, customer behavior, and category contributions.
+An interactive Tableau dashboard developed using the NovaMart Retail Store dataset to analyze sales performance, profitability, customer behavior, and category contributions.
 
 ---
 
@@ -14,7 +14,7 @@ The dashboard enables stakeholders to monitor KPIs, analyze sales trends, evalua
 
 ## Dashboard Preview
 
-### Executive Dashboard
+### NovaMart Retail Sales Executive Dashboard
 
 ![Executive Dashboard](ecommerce-sales-analytics/images/1_EXECUTIVE_DASHBOARD.png)
 
