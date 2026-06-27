@@ -1,7 +1,7 @@
 # Ignore data folder and datasets
-data/
-*.csv
-*.xlsx
+# data/
+# *.csv
+# *.xlsx
 
 # Ignore Python virtual environments
 venv/
